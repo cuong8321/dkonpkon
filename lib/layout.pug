@@ -1,6 +1,29 @@
-
 include components.pug
-
 doctype html
-
 | !{'\n\n<!--\n' + license + '\n-->\n\n'}
+
+html(lang = 'vi')
+  head
+    meta(charset = 'utf-8')
+    title
+  body
+    header
+      button#menu-button
+      nav
+        ul
+          li menu
+      div(logo="id")
+        img //logo
+      label(for="search-button")
+      input#search(type="text")
+      button#search-button
+    section#main-section
+      main#main
+        img //Ảnh game
+        div.textContent
+          p Nội dung game
+      aside
+        a.recomendation
+          article //các quảng cáo,liên kết ngoài, blog ...
+    footer
+      p copyright 2017
